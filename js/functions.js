@@ -7,3 +7,37 @@ function displayMsg() {
 
 // виклик функції
 displayMsg();
+
+
+
+// (username) - це параметр, його значення завжди буде приходити під час виклику функції зі списку аргументів
+function greeting(username) {
+    console.log(`Hello, ${username}!`);
+}
+
+// ("Dima") - це аргумент, це значенняя для параметру функції
+greeting("Dima");
+greeting("Andrii");
+greeting("Karyna");
+
+
+
+
+function convertToInt(string) {
+    const number = Number.parseFloat(string);
+    const result = Math.round(number);
+    console.log(result);
+    return result; /* для отримання значення (результату розрахунків всередині функції)
+    у зовнішній код на місце виклику
+
+    */
+}
+
+
+convertToInt("25.7px");
+convertToInt("100.5px");
+convertToInt("3.01px");
+
+
+const newFigHeight = convertToInt("25.7px") + 5;
+console.log(newFigHeight);
