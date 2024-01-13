@@ -27,3 +27,8 @@ console.log("2" > "12"); /*
 // 50 > 49 true
 console.log("2".charCodeAt(0)) // 50
 console.log("1".charCodeAt(0)) // 49
+
+console.log("a" > "A");
+// 97 > 65 true
+console.log("a".charCodeAt(0)) // 97
+console.log("A".charCodeAt(0)) // 65
