@@ -41,3 +41,34 @@ convertToInt("3.01px");
 
 const newFigHeight = convertToInt("25.7px") + 5;
 console.log(newFigHeight);
+
+
+
+
+
+
+function calcBMI(weight, height) {
+/* 1. замінити кому на крапку (наприклад через метод replace)
+2. перетворюємо строку в число (наприклад через метод Number або parseFloat())
+3. рахуємо індекс маси тіла та округлюємо до однієї цифри після коми
+*/
+    
+    // перший крок
+    weight = weight.replace(",", ".");
+    height = height.replace(",", ".");
+    
+    // другий крок
+    weight = Number(weight);
+    height = Number(height);
+
+    // третій крок
+    const result = weight / (height * height);
+
+    console.log(weight, height);
+    return Number(result.toFixed(1));
+    // .toFixed - округлює число до певної кількості цифр після коми, але цей метод повертає "рядок"
+}
+
+
+const bmi = calcBMI("88,3", "1.75");
+console.log(bmi);
