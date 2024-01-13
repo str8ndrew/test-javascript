@@ -25,13 +25,13 @@ console.log("2" > "12"); /*
 */
 
 // 50 > 49 true
-console.log("2".charCodeAt(0)) // 50
-console.log("1".charCodeAt(0)) // 49
+console.log("2".charCodeAt(0)); // 50
+console.log("1".charCodeAt(0)); // 49
 
 console.log("a" > "A");
 // 97 > 65 true
-console.log("a".charCodeAt(0)) // 97
-console.log("A".charCodeAt(0)) // 65
+console.log("a".charCodeAt(0)); // 97
+console.log("A".charCodeAt(0)); // 65
 
 
 
@@ -46,9 +46,9 @@ console.log("6" === 6); // false
 */
 
 
-console.log(null > 0) // false (1)
-console.log(null == 0) // false (2)
-console.log(null >= 0) // true (3)
+console.log(null > 0); // false (1)
+console.log(null == 0); // false (2)
+console.log(null >= 0); // true (3)
 
 /* >=, >, <, <= та == працюють по-різному
 
@@ -57,5 +57,10 @@ console.log(null >= 0) // true (3)
 3. 0 >= 0 значить true
 2. в прикладі під час використання несуворого порівняння з null є правило, що коли ви порівнюєте null або
 undefined через ==, то вони ніколи не будуть конвертуватися ні в що, вони просто рівні самі собі і все.
-
 */
+
+
+// NaN - це єдине значення в JS, яке ніколи не дорівнює саме собі (для перевірки на НаН є функціє isNaN)
+console.log(NaN == NaN); // false
+console.log(NaN === NaN); // false
+console.log(isNaN(NaN)); // true
