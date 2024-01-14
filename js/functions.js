@@ -72,3 +72,23 @@ function calcBMI(weight, height) {
 
 const bmi = calcBMI("88,3", "1.75");
 console.log(bmi);
+
+
+
+
+
+
+//TODO: № 2  if...else =========================================================================================
+//Використовуючи конструкцію if...else,
+//напишіть код, який запитуватиме:
+//"Яка офіційна назва JavaScript?"
+//Якщо користувач вводить "ECMAScript",
+// показати через alert: "Вірно!"
+//інакше відобразити: "Не знаєте? ECMAScript!"
+
+const question = prompt("Яка офіційна назва JavaScript?");
+if(question === "ECMAScript") {
+alert("Вірно!")
+} else {
+    alert("Не знаєте? ECMAScript!")
+}
