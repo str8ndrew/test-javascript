@@ -92,3 +92,38 @@ alert("Вірно!")
 } else {
     alert("Не знаєте? ECMAScript!")
 }
+
+
+
+//TODO:  № 4   =============================================
+// Напишіть програму, яка отримає від користувача
+//число (кількість хвилин) і виведе у консоль
+//рядок у форматі годин і хвилин
+//70 === 01:10
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+
+const time = 70;
+const minets = time % 60;
+console.log(minets);
+const hours = Math.floor(time / 60);
+const modifyHours = String(hours).padStart(2, 0);
+console.log(`${modifyHours}:${minets}`);
+
+
+
+
+//TODO: № 4
+// Змінна num може набувати 4 значення: 1, 2, 3 або 4. Якщо вона має
+// значення '1', то у змінну result запишемо 'зима', якщо має значення
+// '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
+
+const num = 3;
+let result = "";
+switch (num) {
+    case 1: result = "зима"; break;
+    case 2: result = "весна"; break;
+    case 3: result = "літо"; break;
+    case 4: result = "осінь"; break;
+    default: result = "тільки 4 пори року";
+}
+console.log(result);
