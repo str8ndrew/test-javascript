@@ -103,11 +103,11 @@ alert("Вірно!")
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
 
 const time = 70;
-const minets = time % 60;
-console.log(minets);
+const minutes = time % 60;
+console.log(minutes);
 const hours = Math.floor(time / 60);
 const modifyHours = String(hours).padStart(2, 0);
-console.log(`${modifyHours}:${minets}`);
+console.log(`${modifyHours}:${minutes}`);
 
 
 
@@ -127,3 +127,14 @@ switch (num) {
     default: result = "тільки 4 пори року";
 }
 console.log(result);
+
+
+
+/* Напиши скрипт перевірки підписки користувача
+Є три типи підписки: "free", "vip", "pro"
+Отримати доступ можуть тільки користувачі "vip" та "pro"
+*/
+
+const sub = "vip";
+const canAcces = sub === "pro" || sub === "vip";
+console.log(canAcces);
