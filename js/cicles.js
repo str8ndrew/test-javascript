@@ -46,8 +46,23 @@ while (clientCounter < maxClients) {
     console.log(clientCounter);
     clientCounter += 1;
 }
-
-
-
-
 console.log("While examples");
+
+
+/* Напиши скрипт, який підраховує суму всіх парних чисел, 
+які входять в діапазон чисел у змінних від мін до макс.
+Наприклад, якщо мін = 0 і макс = 5, то діапазон 0-5, і в 
+ньому два парних числа - 2 і 4, їх сума 6.
+*/
+
+const min = 5;
+const max = 15;
+let total = 0;
+for (let i = min; i <= max; i += 1) {
+    if (i % 2 === 0 && i !== 0) {
+        console.log("Even: ", i);
+        total += i;
+    }
+}
+
+console.log(`TOTAL: ${total}`);
