@@ -66,3 +66,4 @@ for (let i = min; i <= max; i += 1) {
 }
 
 console.log(`TOTAL: ${total}`);
+
