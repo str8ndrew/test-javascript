@@ -71,3 +71,11 @@ console.log(planetss.slice(1, 3)); // ['Mars', 'Venus']
 const planet = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
 const result = planet.slice(1, 3);
 console.log(result); // ["Mars", "Venus"]
+
+// Метод concat()
+// Метод concat(arr1, arr2, ..., arrN) використовується для об'єднання двох або більше масивів.
+
+const firstArrays = ["Mercury", "Venus"];
+const secondArrays = ["Mars", "Jupiter"];
+const results = firstArrays.concat(secondArrays);
+console.log(results); // ["Mercury", "Venus", "Mars", "Jupiter"];
