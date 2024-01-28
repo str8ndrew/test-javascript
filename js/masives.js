@@ -34,3 +34,40 @@ console.log(planets); // ['Jupiter', 'Mars', 'Neptune', 'Uranus']
 // } else {
 // 	console.log("3 or less elements");
 // }
+
+
+// Масив → Рядок
+// При перетворенні масиву в рядок усі елементи масиву об'єднуються в один рядок, розділений комами.
+
+const array = [1, true, "Poly"];
+console.log(String(array)); // "1,true,Poly"
+console.log(array + "5"); // "1,true,Poly5"
+
+// Масив → Логічне значення (буль)
+// При перетворенні масиву в логічне значення будь-який масив, навіть порожній, перетворюється на true.
+
+
+// Методи масиву
+// Метод join()
+// Метод масиву join(delimiter) дозволяє об'єднати елементи масиву в рядок.
+// У результуючому рядку елементи будуть розділені символом або групою символів, зазначених у delimiter.
+
+const words = ["JavaScript", "is", "amazing"];
+console.log(words.join("")); // 'JavaScriptisamazing'
+console.log(words.join(" ")); // 'JavaScript is amazing'
+console.log(words.join("-")); // 'JavaScript-is-amazing'
+
+
+// Метод slice()
+// Метод масиву slice(begin, end) повертає новий масив, що містить копію частини вихідного масиву,
+// не змінюючи його.Копія створюється від індексу begin до, але не включаючи індекс end.
+
+const planetss = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+console.log(planetss.slice(0, 2)); // ['Earth', 'Mars']
+console.log(planetss.slice(0, 4)); // ['Earth', 'Mars', 'Venus', 'Jupiter']
+console.log(planetss.slice(1, 3)); // ['Mars', 'Venus']
+
+// Результат роботи методу slice() можна зберегти у змінну для подальшого використання:
+const planet = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+const result = planet.slice(1, 3);
+console.log(result); // ["Mars", "Venus"]
