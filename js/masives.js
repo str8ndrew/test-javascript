@@ -99,11 +99,36 @@ console.log(results); // ["Mercury", "Venus", "Mars", "Jupiter"];
 // або закінчуватися символом пробілу.
 // Скрипт повинен працювати для будь - якого рядка.
 
-const string = "Welcome to the future";
+// const string = "Welcome to the future";
 
-function cutString(string) {
-    const stringArr = string.split(" ");
-    const cuttedString = stringArr.slice(1, stringArr.length - 1);
-    const resultats = cuttedString.join(" ").trim();
-    return resultats;
+// function cutString(string) {
+//     const stringArr = string.split(" "); // розбиваємо рядок на масив слів з розділенням на пробіл
+//     const cuttedString = stringArr.slice(1, stringArr.length - 1); // копіюємо частинку масива без 1 та останнього слова
+//     const resultats = cuttedString.join(" ").trim(); /* збираємо масив у рядок, вказавши в ролі поєднувача елементів пробіл 
+//     та прибираємо зайві пробіли на початку і в кінці рядка */
+//     return resultats;
+// }
+
+/* Напиши скрипт пошуку найменшого числа у масиві. Код повинен працювати для будь-якого масиву чисел.
+Використовий цикл для розв*язання задачі */
+
+
+
+const values = [2, 17, 94, 1, 23, 37];
+console.log(findMin(values));
+
+function findMin(arr) {
+    /* 1. задаємо в якості мінімального значення перший елемент масиву 
+    2. запускаємо цикл на перебір масиву починаючи з другого елементу 
+    (тому що перший ми вже використали. для того, щоб не робити зайву перевірку)
+    3. порівняти поточне мінімальне значення з поточним елементом масиву, 
+    якщо поточний елемент менший за мінімальний, то він стає новим мінімальним */
+    let min = arr[0];
+    for (let i = 1; i < arr.length; i += 1) {
+        // другий крок, якщо поточний елемент масиву менший за мінімальний
+        if (arr[i] < min) {
+            min = arr[i]; // третій крок, то задаємо поточний елемент масиву в якості мінімального
+        }
+    }
+    return min;
 }
