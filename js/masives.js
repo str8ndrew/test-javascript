@@ -79,3 +79,24 @@ const firstArrays = ["Mercury", "Venus"];
 const secondArrays = ["Mars", "Jupiter"];
 const results = firstArrays.concat(secondArrays);
 console.log(results); // ["Mercury", "Venus", "Mars", "Jupiter"];
+
+
+// Напиши скрипт для обчислення площі прямокутника зі сторонами,
+// значення яких зберігаються у змінній values у вигляді рядка.
+// Значення гарантовано розділені пробілом.
+// const values = "8 11";
+// function calculateArea(values) {
+//     const valuesArr = values.split(" ");
+//     const width = Number(valuesArr[0]);
+//     const height = Number(valuesArr[1]);
+//     return width * height;
+// }
+
+
+
+// Напиши скрипт, який виводить у консоль всі слова рядка
+// крім першого і останнього.Результуючий рядок не повинен починатися
+// або закінчуватися символом пробілу.
+// Скрипт повинен працювати для будь - якого рядка.
+
+const
