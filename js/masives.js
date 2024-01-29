@@ -99,4 +99,11 @@ console.log(results); // ["Mercury", "Venus", "Mars", "Jupiter"];
 // або закінчуватися символом пробілу.
 // Скрипт повинен працювати для будь - якого рядка.
 
-const
+const string = "Welcome to the future";
+
+function cutString(string) {
+    const stringArr = string.split(" ");
+    const cuttedString = stringArr.slice(1, stringArr.length - 1);
+    const resultats = cuttedString.join(" ").trim();
+    return resultats;
+}
