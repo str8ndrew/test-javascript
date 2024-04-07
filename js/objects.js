@@ -21,3 +21,6 @@ for (const key of keys) {
   console.log(apartment[key]);
 }
 const values = ["Spacious apartment in the city center", 4, 2153];
+
+
+
