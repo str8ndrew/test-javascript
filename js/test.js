@@ -4,7 +4,7 @@ let drawCats = function (howManyTimes) {
     }
 }
 
-drawCats(10);
+drawCats(3);
 
 /* Math.round(num): повертає значення числа після округлення до найближчого
 цілого. Округлення відбувається за математичними правилами, якщо десяткова
@@ -26,3 +26,15 @@ console.log((2.2133453).toFixed(5));
 const value = "24.5px";
 const numerical = Number.parseFloat(value);
 console.log(numerical); // 24.5
+
+
+//------------------------> FUNCTIONS <------------------------//
+// Оголошення параметрів x, y, z
+function multiply(x, y, z) {
+  console.log(`Result: ${x * y * z}`);
+}
+
+// Передача аргументів
+multiply(2, 3, 5); // "Result: 30"
+multiply(4, 8, 12); // "Result: 384"
+multiply(17, 6, 25); // "Result: 2550"
