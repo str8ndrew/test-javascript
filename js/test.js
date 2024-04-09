@@ -42,13 +42,43 @@ multiply(17, 6, 25); // "Result: 2550"
 
 
 //------------------------> МЕТОДИ РЯДКІВ <------------------------//
+
 /* Метод slice() копіює підрядок із вихідного рядка,починаючи з індексу startIndex і 
 до(не включаючи) індексу endIndex, і повертає цю копію як новий рядок. */
-const fullName = "Andrii Ostrianin";
-console.log(fullName.slice(4, 6)); // ii
-console.log(fullName.slice(7)); // Ostrianin 
-console.log(fullName.slice(0, fullName.length)); // Andrii Ostrianin
-const surname = fullName.slice(7);
+const fullNames = "Andrii Ostrianin";
+console.log(fullNames.slice(4, 6)); // ii
+console.log(fullNames.slice(7)); // Ostrianin 
+console.log(fullNames.slice(0, fullNames.length)); // Andrii Ostrianin
+const surname = fullNames.slice(7);
 console.log(surname);
+
+
+// Метод includes()
+/* Метод рядків includes() використовується для перевірки наявності підрядка у рядку.
+Він повертає логічне значення true, якщо підрядок знайдено, і false, якщо підрядок відсутній.
+Функція checkForName(fullName, firstName) приймає два параметри та повертає буль true або false - 
+результат перевірки входження підрядка firstName у рядок fullName.
+
+fullName - рядок, що містить повне ім'я
+firstName - рядок, що містить ім'я для перевірки його входження в повне ім'я
+Доповни тіло функції таким чином, щоб вона повертала результат перевірки входження імені
+(параметр firstName), у повне ім'я (параметр fullName). Врахуй, що регістр символів в параметрах fullName і firstName наперед не відомий.
+ Перед перевіркою входження не забудь прирівняти їх до однакового регістру. */
+ function checkForName(fullName, firstName) {
+  if (fullName.toLowerCase().includes(firstName.toLowerCase())) {
+    return true;
+  }
+  return false;
+}
+
+// Метод indexOf()
+/* Метод indexOf() використовується для пошуку першого входження підрядка в рядок. Він повертає:
+
+індекс першого входження (індекс першого символу) підрядка, якщо він знайдений або
+-1, якщо підрядок не виявлено */
+
+const messages = "Welcome to Bahamas!";
+const index = messages.indexOf("to");
+console.log(index); // 8
 
 
