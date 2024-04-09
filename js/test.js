@@ -38,3 +38,17 @@ function multiply(x, y, z) {
 multiply(2, 3, 5); // "Result: 30"
 multiply(4, 8, 12); // "Result: 384"
 multiply(17, 6, 25); // "Result: 2550"
+
+
+
+//------------------------> МЕТОДИ РЯДКІВ <------------------------//
+/* Метод slice() копіює підрядок із вихідного рядка,починаючи з індексу startIndex і 
+до(не включаючи) індексу endIndex, і повертає цю копію як новий рядок. */
+const fullName = "Andrii Ostrianin";
+console.log(fullName.slice(4, 6)); // ii
+console.log(fullName.slice(7)); // Ostrianin 
+console.log(fullName.slice(0, fullName.length)); // Andrii Ostrianin
+const surname = fullName.slice(7);
+console.log(surname);
+
+
