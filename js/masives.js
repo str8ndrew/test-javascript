@@ -138,14 +138,20 @@ let animals = [];
 animals.push("Cat");
 animals.push("Dog");
 animals.push("Lama");
+console.log(animals);
 
 // Щоб додати елемент на початок масиву, використовуйте метод .unshift()
 console.log(animals[0]);
 animals.unshift("Cow");
 animals.unshift("Horse");
+console.log(animals);
 
 // Видалення елементів масива, метод .pop() він видаляє останній елемент і повертає цей елемент у вигляді значення
 let lastAnimal = animals.pop();
 console.log(lastAnimal);
 animals.unshift(lastAnimal);
+console.log(animals);
+
+// Щоб видалити з масиву перший елемент, повернув його значення, використовуйте shift()
+let firstAnimal = animals.shift();
 console.log(animals);
