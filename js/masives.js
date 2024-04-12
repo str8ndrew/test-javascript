@@ -132,3 +132,20 @@ function findMin(arr) {
     }
     return min;
 }
+
+// Додавання елементів в масив
+let animals = [];
+animals.push("Cat");
+animals.push("Dog");
+animals.push("Lama");
+
+// Щоб додати елемент на початок масиву, використовуйте метод .unshift()
+console.log(animals[0]);
+animals.unshift("Cow");
+animals.unshift("Horse");
+
+// Видалення елементів масива, метод .pop() він видаляє останній елемент і повертає цей елемент у вигляді значення
+let lastAnimal = animals.pop();
+console.log(lastAnimal);
+animals.unshift(lastAnimal);
+console.log(animals);
